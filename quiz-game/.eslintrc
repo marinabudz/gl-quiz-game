@@ -1,0 +1,73 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/typescript",
+    "airbnb",
+    "prettier",
+    "airbnb/hooks"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "project": "./jsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    //"no-console": "error",
+    "quotes": ["error", "double"],
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "no-unused-vars": "warn",
+    "comma-dangle": ["error", { "functions": "ignore" }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [0],
+    "react/jsx-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        //"namedComponents": "function-declaration"
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": "always",
+        "ObjectPattern": { "multiline": true }
+        //      "ImportDeclaration": {"multiline": true, "minProperties": 3}
+      }
+    ],
+    "no-confusing-arrow": "warn",
+    "react/prop-types": 0,
+    "max-len": [
+      2,
+      {
+        "code": 100,
+        "tabWidth": 4,
+        "ignoreUrls": true,
+        "ignoreRegExpLiterals": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+// colors
+$color-dark-orange: #E87928;
+$color-orange: #FF8B37;
+$color-light-orange: #FFAC70;
+$color-orange-disabled: #FFF3EB;
+$color-gray: #D0D0D8;
+$color-gray-disabled: #F5F5F7;
+$color-black: #1C1C21;
+$color-white: #ffffff;
+$color-green: #47D867;
+$color-green-disabled: #E6FAEA;
+$color-red: #EC6259;
+$color-red-disabled: #FDEEED;
+
+$background-input: #fbfafa;
+$color-input-border: #e1e1e1;
+$box-shadow: 0px 2px 6px rgba(237, 127, 46, 0.5);
+
+// Fonts
+$font-family-inter: Inter;
+$font-family-lato: Lato;
+
+@mixin LatoFont($size) {
+    font-family: $font-family-lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $size + px;
+    line-height: 150%;
+};
