@@ -1,0 +1,19 @@
+
+@import "src/variables";
+
+:export {
+    darkOrange: $color-dark-orange;
+    orange:$color-orange;
+    lightOrange:$color-light-orange;
+    orangeDisabled:$color-orange-disabled;
+    darkGrey: $color-dark-gray;
+    gray : $color-gray;
+    grayDisabled : $color-gray-disabled;
+    black : $color-black;
+    white: $color-white;
+    green: $color-green;
+    lightGreen:$color-green-disabled;
+    red:$color-red;
+    lightRed:$color-red-disabled;
+    peach: $color-peach;
+}

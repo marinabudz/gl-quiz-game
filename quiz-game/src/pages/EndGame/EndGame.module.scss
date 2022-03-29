@@ -1,0 +1,64 @@
+@import "src/variables";
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+  padding: 0px 30px;
+  max-width: 1200px;
+}
+
+.endQuiz {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 100px;
+}
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  color: $color-black;
+  opacity: 0.5;
+}
+.score {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  color: $color-black;
+  
+}
+
+@media (max-width: 900px) {
+  .image {
+    background-position: center center;
+  }
+
+  .block {
+    flex-direction: column;
+  }
+  .block img {
+    height: 192px;
+    width: 288px;
+    margin-bottom: 35px;
+  }
+  .score {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .endQuiz {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+}

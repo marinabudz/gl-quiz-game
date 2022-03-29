@@ -1,0 +1,6 @@
+export const QuizActionTypes = {
+  SET_QUIZ: "SET_QUIZ",
+  SET_QUIZ_ERROR: "SET_QUIZ_ERROR",
+  IS_LOADING: "IS_LOADING",
+  SET_SCORE: "SET_SCORE"
+};

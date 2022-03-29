@@ -1,0 +1,32 @@
+@import "src/variables";
+
+.btn {
+  min-width: 230px;
+  width: fit-content;
+  border-radius: 12px;
+  color: $color-white;
+  margin-top: 8px;
+  max-width: 292px;
+  background-color: $color-orange;
+  border-width: 0px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  height: 64px;
+  text-align: center;
+  @media (max-width: 800px) {
+	border-radius:8px;
+	height: 48px;
+	font-size: 14px;
+  }
+
+  &:hover {
+    background-color: $color-light-orange;
+  }
+  &:hover {
+    background-color: $color-light-orange;
+  }
+  &:active {
+    background-color: $color-dark-orange;
+  }
+}
